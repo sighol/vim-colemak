@@ -11,16 +11,16 @@
 " }}}
 " Up/down/left/right {{{
     " Always go down/up one line regardless of "set wrap". Is that a sane default?
-    nnoremap h h|xnoremap h h|onoremap h h|
-    nnoremap n gj|xnoremap n gj|onoremap n gj|
-    nnoremap e gk|xnoremap e gk|onoremap e gk|
+    nnoremap n h|xnoremap n h|onoremap n h|
+    nnoremap e gj|xnoremap e gj|onoremap e gj|
+    nnoremap u gk|xnoremap u gk|onoremap u gk|
     nnoremap i l|xnoremap i l|onoremap i l|
 " }}}
 " Turbo navigation {{{
     " Works with counts, see ":help complex-repeat"
-    nnoremap <silent> H @='5h'<CR>|xnoremap <silent> H @='5h'<CR>|onoremap <silent> H @='5h'<CR>|
-    nnoremap <silent> N @='5gj'<CR>|xnoremap <silent> N @='5gj'<CR>|onoremap <silent> N @='5gj'<CR>|
-    nnoremap <silent> E @='5gk'<CR>|xnoremap <silent> E @='5gk'<CR>|onoremap <silent> E @='5gk'<CR>|
+    nnoremap <silent> N @='5h'<CR>|xnoremap <silent> N @='5h'<CR>|onoremap <silent> N @='5h'<CR>|
+    nnoremap <silent> E @='5gj'<CR>|xnoremap <silent> E @='5gj'<CR>|onoremap <silent> E @='5gj'<CR>|
+    nnoremap <silent> U @='5gk'<CR>|xnoremap <silent> U @='5gk'<CR>|onoremap <silent> U @='5gk'<CR>|
     nnoremap <silent> I @='5l'<CR>|xnoremap <silent> I @='5l'<CR>|onoremap <silent> I @='5l'<CR>|
 " }}}
 " Words forward/backward {{{
@@ -29,8 +29,6 @@
     " y/Y = forward word/WORD
     nnoremap l b|xnoremap l b|onoremap l b|
     nnoremap L B|xnoremap L B|onoremap L B|
-    nnoremap u e|xnoremap u e|onoremap u e|
-    nnoremap U E|xnoremap U E|onoremap U E|
     nnoremap y w|xnoremap y w|onoremap y w|
     nnoremap Y W|xnoremap Y W|onoremap Y W|
     cnoremap <C-L> <C-Left>
@@ -95,9 +93,9 @@
     nnoremap gV gP|xnoremap gV gP|
 " }}}
 " Window handling {{{
-    nnoremap <C-W>h <C-W>h|xnoremap <C-W>h <C-W>h|
-    nnoremap <C-W>n <C-W>j|xnoremap <C-W>n <C-W>j|
-    nnoremap <C-W>e <C-W>k|xnoremap <C-W>e <C-W>k|
+    nnoremap <C-W>n <C-W>h|xnoremap <C-W>h <C-W>h|
+    nnoremap <C-W>e <C-W>j|xnoremap <C-W>n <C-W>j|
+    nnoremap <C-W>u <C-W>k|xnoremap <C-W>e <C-W>k|
     nnoremap <C-W>i <C-W>l|xnoremap <C-W>i <C-W>l|
 " }}}
 
